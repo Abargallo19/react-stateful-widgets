@@ -20,11 +20,15 @@ import { useState } from 'react';
 // Use this variable ONLY to initialize a slice of state!
 const listOfSquareIds = ['sqA', 'sqB', 'sqC', 'sqD'];
 
+
+
 export default function Squares() {
   // Use the state hook twice, as we need two slices of state: 'squares' and
   // 'activeSquare'. One holds the _array_ of square ids, and the other keeps track
   // of the currently active square. On page load there's no active square,
   // so the value of 'activeSquare' should be null.
+  const [activeSquare, setActiveSquare] = useState(null);
+  const [square]
 
   const getClassName = id => {
     // This is NOT a click handler but a helper, used inside the JSX (see below).
