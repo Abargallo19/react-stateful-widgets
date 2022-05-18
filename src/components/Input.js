@@ -52,7 +52,7 @@ const [inputValue, setInputValue] = useState("");
   };
   const reset = () => {
     /* STEP 5 */
-    setInputValue(inputValue);
+    setInputValue('');
   };
 
   const style = {
