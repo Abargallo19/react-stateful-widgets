@@ -71,12 +71,14 @@ console.log(count)
     marginBottom: '0.3em',
     color: count % 2 === 0 ? 'royalblue' : 'crimson' /* STEP 2 */
   };
-
+//if count is even number, then string "even", else string "odd"
+// {count} ? "even" : "odd"
   return (
     <div className='widget-counter container'>
       <h2>Counter</h2>
       <div id='count' style={style}>
-        Number {count} is even {/* STEP 3 */}
+          Number {count} is {count % 2 === 0 ? 'even' : 'odd'} {/* STEP 3 */}
+        
       </div>
       <div>
         <button id='increment' onClick={increment}>Increment</button>
