@@ -63,7 +63,7 @@ console.log(count)
   };
   const reset = () => {
     /* STEP 6 */
-    setCount(count);
+    setCount(0);
   };
 
   const style = {
