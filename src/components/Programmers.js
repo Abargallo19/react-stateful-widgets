@@ -37,11 +37,7 @@ const [featured, setFeature] = useState(null);
     // It's going to utilize both slices of state to return the _name_ of the featured dev.
     // The beauty of closures is that we can "see" both slices of state from this region
     // of the program, without needing to inject the information through arguments.
-    // for (let i = 0; i < programmers.length; i++) {
-    //   if (programmers.id === featured) {
-    //     return programmers[i].name;
-    //   }
-    // }
+    // 
     const foundDev = programmers.find(dev => dev.id === featured);
 
     return foundDev.name;
