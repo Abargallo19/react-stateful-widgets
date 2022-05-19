@@ -29,6 +29,7 @@ export default function Programmers() {
   // We'll have to use the state hook twice, as we need two slices of state.
   // The programmers list on the one hand, and the id of the featured programmer on the other.
   const [programmers, setProgrammers] = useState(listOfAwesome);
+const [featured, setFeature] = useState(null);
 
   const getNameOfFeatured = () => {
     // Leave this for last!
@@ -41,7 +42,7 @@ export default function Programmers() {
   const style = {
     fontSize: '1.5em',
     marginTop: '0.5em',
-    color: 'royalblue', // 🤔 color turns to gold, when celebrating
+    color: featured ? 'gold' : 'royalblue', // 🤔 color turns to gold, when celebrating
   };
 
   return (
