@@ -37,7 +37,7 @@ export default function Squares() {
     // Right-click and "inspect element" on the square to see its effect.
 
 
-    return ''
+    return id === activeSquare ? 'active' :'';
   };
 
   const markActive = id => {
@@ -45,7 +45,7 @@ export default function Squares() {
     // Set the id argument to become the active id in state
     // (unless it already is, in which case we should reset
     // the currently active square id back to initial state).
-
+    id === activeSquare ? setActiveSquare(null) : setActiveSquare(id);
   };
 
   return (
